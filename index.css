@@ -1,16 +1,24 @@
 *{
     background-color: #070D1f;
+    color: white;
 }
 .first{
-    background-color: beige;
+    background-image: url("./Images/pizza1.jpg");
     height: 300px;
     background-size: cover;
     text-align: center;
-    color: rgb(253, 250, 250);
 }
 .hub{
 margin-left: 17%;
 }
 .crust{
 margin-top: 10%;
+}
+.about{
+    display: flex;
+    margin: 60px;
+}
+.image{
+    height: 350px;
+    margin: 50px;
 }
