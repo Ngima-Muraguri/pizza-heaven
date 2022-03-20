@@ -27,3 +27,9 @@ margin-top: 10%;
     background-image: url("./Images/fadedinpizza.jpeg");
     height: 100px;
 }
+.pass{
+    display: flex;
+}
+.word{
+    display: flex;
+}
