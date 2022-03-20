@@ -33,3 +33,9 @@ margin-top: 10%;
 .word{
     display: flex;
 }
+.mage{
+    width: 300px;
+    height: 200px;
+    padding: 10px;
+    margin: 20px;
+}
