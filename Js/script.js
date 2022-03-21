@@ -15,20 +15,28 @@ $(document).ready(function){
 
     //  setting prices
     var typePrice;
-    if(size === "BBQ chicken"){
-        typePrice = 150
-    }else if (size === "BBQ steak"){
+    if(type === "BBQ chicken"){
+        typePrice = 400
+    }else if (type === "BBQ steak"){
+        typePrice = 300
+    }else if(type === "Hawaiian"){
         typePrice = 200
-    }else if(size === "Hawaiian"){
-        typePrice = 100
-    }else if (size === "Veggie"){
+    }else if (type === "Veggie"){
         typePrice = 200
-    }else if(size === "Boerewors"){
-        typePrice = 100
-    }else if (size === "Periperi"){
+    }else if(type === "Boerewors"){
+        typePrice = 300
+    }else if (type === "Periperi"){
         typePrice = 200
     }
-    
+
+    var sizePrice;
+     if(size === "large"){
+         sizePrice = 800
+     }else if (size === "medium"){
+         sizePrice = 600
+     }else if(size === "small"){
+         sizePrice = 400
+     }
 
      var crustPrice;
      if(crust === "crispy"){
@@ -46,6 +54,8 @@ $(document).ready(function){
     }else if(toppings === "Green-olives"){
         topPrice = 80
     }
+
+    var totalPrice = number * (topPrice + crustPrice + sizePrice + typePrice)
 
 
 
