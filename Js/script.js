@@ -109,3 +109,15 @@ $(document).ready(function(){
 
 
 
+var value;
+var total =0;
+$(".check").click(function(){
+    $("td:nth-child(6)").each(function(){
+        value = $(this).html();
+        total +=parseInt(value)
+        $(".one").text("Your total is " + total)
+    })
+})
+// var checked = document.$("#check") !== null;
+// console.log(checked);
+
