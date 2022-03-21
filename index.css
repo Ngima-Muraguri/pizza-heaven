@@ -39,12 +39,10 @@ margin-top: 10%;
     /* padding: 10px; */
     margin: 60px;
 }
-.btn{
-    width: 100px;
-    height: 35px;
-    border-radius: 10px;
-    font-weight: bolder;
+.five{
+    text-align: center;
+    padding: 30px;
 }
-.btn:hover{
-    background-color: turquoise;
+.pizzasize , .order-form{
+    padding: 20px;
 }
