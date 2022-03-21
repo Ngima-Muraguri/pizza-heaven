@@ -65,4 +65,47 @@ $(document).ready(function(){
     var totalPrice = number * (topPrice + crustPrice + sizePrice + typePrice + deliveryPrice);
     var totalCost = parseInt(totalPrice);
 
-   
+    $(".cart").append(
+        `
+        <tr>
+        <td>${type}</td>
+        <td>${size}</td>
+        <td>${crust}</td>
+        <td>${toppings}</td>
+        <td>${number}</td>
+        <td>${totalCost}</td>
+        </tr>
+        `
+    )
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    });
+    
+});
+// $("input[type=checkbox").click(function(){
+//     wholeTotal=300;
+//     $("input[type=checkbox]:checked").each(function(){
+
+//     })
+// })
+// var checked = document.$("#check") === 300;
+// console.log(checked);
+
+
+
+
