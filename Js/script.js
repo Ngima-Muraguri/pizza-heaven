@@ -14,14 +14,21 @@ $(document).ready(function){
      givenQuantity();
 
     //  setting prices
-    var sizePrice;
-    if(size === "crispy"){
-        sizePrice = 150
-    }else if (size === "Glutten-free"){
-        sizePrice = 200
-    }else if(size === "stuffed"){
-        sizePrice = 100
+    var typePrice;
+    if(size === "BBQ chicken"){
+        typePrice = 150
+    }else if (size === "BBQ steak"){
+        typePrice = 200
+    }else if(size === "Hawaiian"){
+        typePrice = 100
+    }else if (size === "Veggie"){
+        typePrice = 200
+    }else if(size === "Boerewors"){
+        typePrice = 100
+    }else if (size === "Periperi"){
+        typePrice = 200
     }
+    
 
      var crustPrice;
      if(crust === "crispy"){
