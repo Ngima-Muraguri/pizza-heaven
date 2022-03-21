@@ -78,36 +78,9 @@ $(document).ready(function(){
         `
     )
     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     });
     
 });
-// $("input[type=checkbox").click(function(){
-//     wholeTotal=300;
-//     $("input[type=checkbox]:checked").each(function(){
-
-//     })
-// })
-// var checked = document.$("#check") === 300;
-// console.log(checked);
-
-
-
 
 var value;
 var total =0;
@@ -118,6 +91,5 @@ $(".check").click(function(){
         $(".one").text("Your total is " + total)
     })
 })
-// var checked = document.$("#check") !== null;
-// console.log(checked);
+
 
