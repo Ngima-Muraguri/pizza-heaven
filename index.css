@@ -46,3 +46,11 @@ margin-top: 10%;
 .pizzasize , .order-form{
     padding: 20px;
 }
+.btn{
+    background-color: blue;
+    color: white;
+    margin: 30px;
+}
+.btn:hover{
+    background-color: turquoise;
+}

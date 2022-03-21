@@ -14,6 +14,14 @@ $(document).ready(function){
      givenQuantity();
 
     //  setting prices
+    var sizePrice;
+    if(size === "crispy"){
+        sizePrice = 150
+    }else if (size === "Glutten-free"){
+        sizePrice = 200
+    }else if(size === "stuffed"){
+        sizePrice = 100
+    }
 
      var crustPrice;
      if(crust === "crispy"){
@@ -23,6 +31,7 @@ $(document).ready(function){
      }else if(crust === "stuffed"){
          crustPrice = 100
      }
+     var topPrice;
      if(toppings === "pineapple"){
         topPrice = 50
     }else if (toppings === "bacon"){
