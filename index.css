@@ -21,7 +21,11 @@ font-size: 25px;
 }
 .about{
     display: flex;
-    margin: 30px;
+    /* margin: 30px; */
+}
+.us{
+    display:inline-block;
+    margin: 20px;
 }
 .image{
     height: 350px;
