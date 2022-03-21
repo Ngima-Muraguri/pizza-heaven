@@ -78,9 +78,9 @@ font-size: 25px;
 .contact{
     text-align: center;
 }
-.cart{
-    margin: 40px;
-}
+/* .cart{ */
+    /* margin: 40px; */
+/* } */
 tr, th{
     padding: 30px;
 }
