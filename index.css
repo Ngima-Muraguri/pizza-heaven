@@ -47,10 +47,26 @@ margin-top: 10%;
     padding: 20px;
 }
 .btn{
+    height: 40px;
     background-color: blue;
     color: white;
     margin: 30px;
 }
 .btn:hover{
     background-color: turquoise;
+}
+.check{
+    height: 40px;
+    background-color: blue;
+    color: white;
+    margin: 30px;
+}
+.contact{
+    text-align: center;
+}
+.cart{
+    margin: 40px;
+}
+tr, th{
+    padding: 30px;
 }

@@ -1,9 +1,9 @@
-$(document).ready(function){
-    function orderNow(){
-        var type = $("#type").val();
-        var size = $("#pick").val();
-        var crust = $("#crust").val();
-        var toppings = $("#topping").val();
+$(document).ready(function(){
+   $(".btn").click(function(){
+        var type = $("#type option:selected").val();
+        var size = $("#pick option:selected").val();
+        var crust = $("#crust option:selected").val();
+        var toppings = $("#topping option:selected").val();
         var number = $("#quantity").val();
 
      function givenQuantity(){
@@ -15,17 +15,17 @@ $(document).ready(function){
 
     //  setting prices
     var typePrice;
-    if(type === "BBQ chicken"){
+    if(type === "chicken"){
         typePrice = 400
-    }else if (type === "BBQ steak"){
+    }else if (type === "steak"){
         typePrice = 300
-    }else if(type === "Hawaiian"){
+    }else if(type === "hawai"){
         typePrice = 200
-    }else if (type === "Veggie"){
+    }else if (type === "veggie"){
         typePrice = 200
-    }else if(type === "Boerewors"){
+    }else if(type === "boerewors"){
         typePrice = 300
-    }else if (type === "Periperi"){
+    }else if (type === "periperi"){
         typePrice = 200
     }
 
@@ -41,7 +41,7 @@ $(document).ready(function){
      var crustPrice;
      if(crust === "crispy"){
          crustPrice = 150
-     }else if (crust === "Glutten-free"){
+     }else if (crust === "glutten-free"){
          crustPrice = 200
      }else if(crust === "stuffed"){
          crustPrice = 100
@@ -51,28 +51,18 @@ $(document).ready(function){
         topPrice = 50
     }else if (toppings === "bacon"){
         topPrice = 100
-    }else if(toppings === "Green-olives"){
+    }else if(toppings === "green-olives"){
         topPrice = 80
     }
-
-    var totalPrice = number * (topPrice + crustPrice + sizePrice + typePrice)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    var deliveryCheck =document.getElementById('check');
+    var deliveryPrice = 0;
+    if(deliveryCheck.checked == true){
+        deliveryPrice = 300
+    }else{
+        deliveryPrice =0;
     }
-}
+
+    var totalPrice = number * (topPrice + crustPrice + sizePrice + typePrice + deliveryPrice);
+    var totalCost = parseInt(totalPrice);
+
+   
