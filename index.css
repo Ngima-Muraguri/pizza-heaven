@@ -36,8 +36,8 @@ margin-top: 10%;
 .mage{
     width: 300px;
     height: 200px;
-    padding: 10px;
-    margin: 20px;
+    /* padding: 10px; */
+    margin: 60px;
 }
 .btn{
     width: 100px;
